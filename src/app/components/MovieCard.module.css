@@ -1,0 +1,10 @@
+.movie-card {
+    /* Outras estilizações do MovieCard */
+}
+
+.movie-image {
+    width: 200px;
+    /* Ajuste conforme necessário */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
