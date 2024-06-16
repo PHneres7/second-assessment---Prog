@@ -1,11 +1,11 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import MovieCard from '@/app/components/movieCard';
-
 import { Movie } from './interfaces/Movie';
 import { fetchMovies } from '@/app/interfaces/fetchMovies';
+import styles from './Page.module.css'; // Importe o arquivo CSS
 
-const App: React.FC = () => {
+const Page: React.FC = () => {
   const [movies, setMovies] = useState<Movie[]>([]);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="App">
+    <div className={styles.page}>
       <h1>Detalhes do Filme</h1>
       {movies.map(movie => (
         <MovieCard key={movie.id} {...movie} />
@@ -31,4 +31,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Page;
