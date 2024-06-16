@@ -1,0 +1,8 @@
+.page {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    /* Espaçamento entre os cartões */
+    padding: 16px;
+    /* Padding ao redor do grid */
+}
