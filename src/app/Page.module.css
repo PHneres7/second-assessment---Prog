@@ -1,8 +1,31 @@
 .page {
+    min-height: 100vh; /* Garante que a altura da página seja pelo menos a altura da tela */
+    background-image: linear-gradient(to bottom right, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.movie-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
-    /* Espaçamento entre os cartões */
-    padding: 16px;
-    /* Padding ao redor do grid */
+    gap: 1rem;
+    max-width: 1200px;
+    margin-top: 2rem;
 }
+
+.headerPage{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+
+}
+.infosHeader{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
