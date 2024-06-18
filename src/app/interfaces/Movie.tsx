@@ -4,7 +4,7 @@ export interface PrimaryImage {
   height?: number;
   url?: string;
   caption?: {
-    __typename: string;
+      __typename: string;
   };
   __typename?: string;
 }
@@ -15,8 +15,8 @@ export interface TitleType {
   isSeries?: boolean;
   isEpisode?: boolean;
   categories?: {
-    canHaveEpisodes?: boolean;
-    __typename?: string;
+      canHaveEpisodes?: boolean;
+      __typename?: string;
   };
   __typename?: string;
 }
@@ -48,4 +48,7 @@ export interface Movie {
   originalTitleText: TitleText;
   releaseYear?: ReleaseYear;
   releaseDate: ReleaseDate;
+  directors?: string[];
+  cast?: string[];
+  plot?: string;
 }
